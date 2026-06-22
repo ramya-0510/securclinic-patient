@@ -44,7 +44,7 @@ export default function CreateNewBill({ onBack, onGenerate }: Props) {
   ]);
   const [addPrescription, setAddPrescription] = useState(false);
 
-  const today = new Date().toLocaleDateString("en-GB", { day: "2-digit", month: "short", year: "numeric" });
+  const _today = new Date().toLocaleDateString("en-GB", { day: "2-digit", month: "short", year: "numeric" });
 
   const subtotal = items.reduce((s, i) => s + i.price * i.qty, 0);
   const tax      = 0;

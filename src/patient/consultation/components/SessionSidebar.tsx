@@ -5,7 +5,7 @@ interface Props {
   doctor: string;
 }
 
-export default function SessionSidebar({ doctor }: Props) {
+export default function SessionSidebar({ doctor: _doctor }: Props) {
   const navigate = useNavigate();
   const [complaint, setComplaint] = useState("Chest Pain");
   const [diagnosis, setDiagnosis] = useState("Angio");

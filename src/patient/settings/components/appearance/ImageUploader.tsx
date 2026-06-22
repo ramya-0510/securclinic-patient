@@ -8,7 +8,7 @@ interface Props {
   onFileChange: (file: File, previewUrl: string) => void;
 }
 
-export function ImageUploader({ label, file, previewUrl, onFileChange }: Props) {
+export function ImageUploader({ label, file: _file, previewUrl, onFileChange }: Props) {
   const inputRef = useRef<HTMLInputElement>(null);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {

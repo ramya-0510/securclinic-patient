@@ -13,7 +13,7 @@ const MOCK_MEDICINES = [
   { name: "Amoxicillin 500mg", type: "Capsule", qty: "01", morning: "-", afternoon: "-", evening: "-", night: "01", notes: "Duration: 5 days, Before food", price: 65 },
 ];
 
-export default function ViewPrescription({ prescription, onBack }: Props) {
+export default function ViewPrescription({ prescription, onBack: _onBack }: Props) {
   const total = MOCK_MEDICINES.reduce((sum, m) => sum + m.price, 0);
   const [showShare, setShowShare] = useState(false);
 
