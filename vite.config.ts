@@ -13,8 +13,7 @@ export default defineConfig({
     strictPort: true, // fail loudly instead of silently switching ports
     allowedHosts: [
       'patient.securclinic.local',
-      'doctor.securclinic.local',
-      'admin.securclinic.local',
+      'patient.securclinic.localhost',
     ],
   },
 })
