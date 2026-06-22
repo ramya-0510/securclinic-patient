@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { CalendarDays, ChevronRight } from "lucide-react";
 import AppointmentTableHeader from "./AppointmentTableHeader";
 import AppointmentTableRow from "./AppointmentTableRow";
 import type { Appointment } from "../../types/appointment.types";
@@ -20,9 +19,9 @@ const mockData: Appointment[] = Array.from({ length: 8 }, (_, i) => ({
 function AppointmentTableView() {
   const [checked, setChecked] = useState<Set<string>>(new Set());
 
-  const allChecked = checked.size === mockData.length;
+  const _allChecked = checked.size === mockData.length;
 
-  const toggleAll = (v: boolean) =>
+  const _toggleAll = (v: boolean) =>
     setChecked(v ? new Set(mockData.map((a) => a.id)) : new Set());
 
   const toggleOne = (id: string, v: boolean) =>

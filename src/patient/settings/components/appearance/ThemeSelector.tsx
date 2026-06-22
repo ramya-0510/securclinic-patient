@@ -21,7 +21,7 @@ export function ThemeSelector({ selected, onChange }: Props) {
     <div className="flex flex-col gap-2">
       <span className="text-[13px] font-medium text-slate-700">Select Theme</span>
       <div className="flex items-center gap-2 flex-wrap">
-        {THEMES.map(({ id, label, style, isGradient }) => (
+        {THEMES.map(({ id, label, style, isGradient: _isGradient }) => (
           <button
             key={id}
             aria-label={label}

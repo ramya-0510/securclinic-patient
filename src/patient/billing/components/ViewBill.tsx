@@ -15,7 +15,7 @@ const MOCK_ITEMS = [
   { name: "Blood Pressure Test", price: 100, qty: 1 },
 ];
 
-export default function ViewBill({ bill, onBack }: Props) {
+export default function ViewBill({ bill, onBack: _onBack }: Props) {
   const [shareOpen, setShareOpen] = useState(false);
   const subtotal = MOCK_ITEMS.reduce((sum, i) => sum + i.price * i.qty, 0);
   const tax = 0;
